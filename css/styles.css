@@ -1,0 +1,247 @@
+/* CUSTOM CSS */
+
+.thumbNail {
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+	transition: .3s;
+}
+
+.thumbNail1 {
+	width: 816px;
+	height: 807px;
+	object-fit: cover;
+}
+
+.thumbNail2 {
+	height: 620px;
+	max-width: 816px;
+	object-fit: cover;
+}
+
+.thumbNail3 {
+	height: 620px;
+	max-width: 400px;
+	object-fit: cover;
+}
+
+
+.thumbNail:hover,
+.thumbNail2:hover,
+.thumbNail1:hover,
+.thumbNail3:hover {
+	filter: contrast(120%);
+	filter: brightness(90%);
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #d1c6c8;
+  border-color: #d1c6c8; 
+  float: left;
+}
+
+
+/* Structure */
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+	width: 100%;
+	min-width: 400px;
+	text-align: center;
+	background-color: rgb(247, 241, 240);
+	background-size: contain;
+	height: 100vh;
+}
+
+#intro {
+	float: left	;
+	padding-left: 200px;
+	margin-top: 300px;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+main {
+	padding-top: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 200px;
+}
+
+.container {
+	width: 100%;
+}
+
+.container2 {
+	padding-left: 215px;
+	padding-right: 215px;
+}
+
+.row {
+	padding-bottom: 10px;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Righteous', cursive;
+	font-size: 4em;
+	letter-spacing: 2px;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Righteous', cursive;
+	font-size: 3em;
+	letter-spacing: 2px;
+}
+
+h3 {
+	text-align: left;
+}
+
+/* Navigation */
+
+header nav {
+	text-align: center;
+	margin: 20px auto;
+	height: 85px;
+	position: absolute;
+	width: 100%;
+	display: block;
+}
+
+header nav li {
+	display: inline-block;
+	margin: 15px 15px 0px 15px;
+	font-family: 'Righteous', cursive;
+	font-weight: 600;
+	font-size: 1em;
+	letter-spacing: 2px;
+}
+
+footer {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/* Image styles */
+
+.self-portrait {
+	width: 380px;
+	height: 380px;
+	object-fit: cover;
+	border-radius: 35px 80px 0px;
+	float: left;
+	padding-right: 30px;
+}
+
+#logo {
+	text-align: center;
+	padding-top: 40px;
+	width: 139px;
+	margin: 0px auto;
+}
+
+
+
+/* Styling for icons */
+
+.iconRed {
+	font-size: 4rem;
+	color: rgb(0, 0, 0);
+	padding: 1rem;
+	border-radius: 15px;
+	margin: 0 10px;
+	transition: .3s;
+}
+.iconRed:hover {
+	transition: .2s;
+	font-size: 4.1rem;
+	color: #805864;
+	padding: 1rem;
+	border-radius: 15px;
+	margin: 0 10px;
+}
+
+
+/*Links */
+a:link {
+	color: rgb(124, 88, 99);
+	text-decoration: none;
+}
+
+a:visited {
+	color: rgb(124, 88, 99);
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #55373f;
+	text-decoration: none;
+}
+
+
+/* Media Queries */
+@media (max-width:1377px) {
+
+	heaver nav li {
+		margin: 0;
+		display: block;
+		text-align: center;
+	}
+
+	main {
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+	}
+
+	.thumbNail,
+	.thumbNail2,
+	.thumbNail1,
+	.thumbNail3 {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	#intro {
+		float: left	;
+		padding-left: 40px;
+		margin-top: 300px;
+	}
+
+	header {
+		background-color: rgb(241, 231, 228);
+		background-size: contain;
+		height: 750px;
+	}
+
+
+	.container2 {
+		padding-left: 40px;
+		padding-right: 40px;
+		text-align: left;
+	}
+
+	.self-portrait {
+		width: 280px;
+		height: 350px;
+		object-fit: cover;
+		border-radius: 35px 80px 0px;
+		padding-bottom: 20px;
+	}
+
+}
